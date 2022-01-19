@@ -1,0 +1,109 @@
+@import "./variable";
+
+.flex {
+  display: flex !important;
+  &.column {
+    flex-direction: column;
+  }
+  &.justify-end {
+    justify-content: flex-end;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-between {
+    justify-content: space-between;
+  }
+  &.items-center {
+    align-items: center;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.wrapper {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .stepper {
+    margin: 30px 0;
+  }
+  .page-content {
+    min-height: 300px;
+    max-height: 400px;
+    overflow: auto;
+  }
+  .user-form {
+    padding-top: 30px;
+  }
+}
+
+.heading {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: $dark-grey !important;
+}
+
+.sub-heading {
+  padding-top: 10px;
+  font-size: 16px !important;
+  color: $light-grey !important;
+}
+
+.input-container {
+  .input-label {
+    font-size: 14px !important;
+    color: #586275 !important;
+    font-weight: bold !important;
+    span {
+      color: $light-grey;
+      font-weight: normal;
+    }
+  }
+  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 40px;
+    padding: 0;
+  }
+  .css-ittuaa-MuiInputAdornment-root {
+    max-height: 100%;
+    height: 100%;
+    background: #edf2ff;
+    padding: 0 5px;
+    p {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+  .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    top: -5px;
+    font-size: 12px;
+  }
+  .css-1wc848c-MuiFormHelperText-root.Mui-error {
+    margin: 0;
+  }
+  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 0 0 0 10px;
+    height: 40px;
+    border-radius: 4px;
+    color: $light-grey;
+  }
+  .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+    .MuiOutlinedInput-notchedOutline,
+  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+    .MuiOutlinedInput-notchedOutline {
+    border-color: $purple;
+  }
+}
+
+.css-18lrjg1-MuiCircularProgress-root {
+  color: $white !important;
+}

@@ -1,0 +1,37 @@
+@import './variable';
+
+.css-1bw0nnu-MuiStep-root {
+    padding: 0 !important;
+    .css-vnkopk-MuiStepLabel-iconContainer {
+      padding: 0 !important;
+    }
+  .css-vnkopk-MuiStepLabel-iconContainer {
+    .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+      height: 2em;
+      width: 1.2em;
+      color: $white;
+      circle {
+          stroke: $light-grey;
+          stroke-width: 0.5px;
+      }
+      &.Mui-active {
+        color: $purple;
+        .css-117w1su-MuiStepIcon-text {
+            font-size: 0.6rem;
+            fill: $white;
+          }
+      }
+    }
+    .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+      color: $purple;
+    }
+    .css-117w1su-MuiStepIcon-text {
+      font-size: 0.6rem;
+      fill: $light-grey;
+    }
+  }
+}
+.css-z7uhs0-MuiStepConnector-line {
+  width: 40px;
+  color: black;
+}

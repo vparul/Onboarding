@@ -1,0 +1,10 @@
+@import './variable';
+
+.primary-button {
+    width: 100% !important;
+    color: $white !important;
+    background-color: $purple !important;
+    text-transform: capitalize !important;
+    padding: 10px 0 !important;
+    max-height: 40px;
+}
