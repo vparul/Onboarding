@@ -69,11 +69,11 @@
       font-weight: normal;
     }
   }
-  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root {
+  .MuiInputBase-root-MuiOutlinedInput-root {
     height: 40px;
     padding: 0;
   }
-  .css-ittuaa-MuiInputAdornment-root {
+  .MuiInputAdornment-root {
     max-height: 100%;
     height: 100%;
     background: #edf2ff;
@@ -83,27 +83,27 @@
       padding: 0 10px;
     }
   }
-  .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  .MuiFormLabel-root-MuiInputLabel-root {
     top: -5px;
     font-size: 12px;
   }
-  .css-1wc848c-MuiFormHelperText-root.Mui-error {
+  .MuiFormHelperText-root.Mui-error {
     margin: 0;
   }
-  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-    padding: 0 0 0 10px;
+  .MuiOutlinedInput-root.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth {
     height: 40px;
     border-radius: 4px;
     color: $light-grey;
+    padding: 0;
   }
-  .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
-    .MuiOutlinedInput-notchedOutline,
-  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
-    .MuiOutlinedInput-notchedOutline {
+
+  fieldset.Mui-focused .MuiOutlinedInput-notchedOutline{
     border-color: $purple;
   }
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: $purple !important;
+  }
 }
-
-.css-18lrjg1-MuiCircularProgress-root {
+.MuiCircularProgress-root {
   color: $white !important;
 }

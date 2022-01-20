@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Grid, Stepper, Box, Step, StepLabel } from "@mui/material";
 import UserDetails from "../UserDetails/userDetails";
 import WorkSpaceDetails from "../WorkspaceDetails/workspaceDetails";
-import SetUp from "../Setup/setup";
+import Usage from "../Usage/usage";
 import Congratulations from "../Congratulations/congratulations";
 import { setCompletedSteps } from "../../store/actions/userDetailsAction";
 import { getCompletedSteps } from "../../store/reducers/userDetailsReducer";
@@ -33,7 +33,7 @@ const Dashboard = () => {
       case 1:
         return <WorkSpaceDetails onSuccess={handleNext} />;
       case 2:
-        return <SetUp onSuccess={handleNext} />;
+        return <Usage onSuccess={handleNext} />;
       case 3:
         return <Congratulations />;
       default:

@@ -1,4 +1,4 @@
-import { SAVE_USER_DETAILS, SAVE_USER_SETUP, SAVE_USER_WORKSPACE_DETAILS, SET_COMPLETED_STEPS } from '../../enums/userDetailsEnum';
+import { SAVE_USER_DETAILS, SAVE_USER_USAGE, SAVE_USER_WORKSPACE_DETAILS, SET_COMPLETED_STEPS } from '../../enums/userDetailsEnum';
 
 export const saveUserDetails = details => async dispatch => {
     dispatch({
@@ -14,9 +14,9 @@ export const saveUserWorkSpaceDetails = details => async dispatch => {
     })
 };
 
-export const saveUserSetup = details => async dispatch => {
+export const saveUserUsage = details => async dispatch => {
     dispatch({
-        type: SAVE_USER_SETUP,
+        type: SAVE_USER_USAGE,
         payload: details,
     })
 };

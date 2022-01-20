@@ -3,19 +3,19 @@ import { MdPerson, MdGroups } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { Grid, Typography, Button, Card, CardContent } from "@mui/material";
 import { getUserDetails } from "../../store/reducers/userDetailsReducer";
-import { saveUserSetup } from "../../store/actions/userDetailsAction";
-import { FOR_MYSELF, FOR_TEAM } from "../../enums/setupEnums";
-import "./setup.scss";
+import { saveUserUsage } from "../../store/actions/userDetailsAction";
+import { FOR_MYSELF, FOR_TEAM } from "../../enums/usageEnums";
+import "./usage.scss";
 
-const SetUp = ({ onSuccess }) => {
+const Usage = ({ onSuccess }) => {
   const dispatch = useDispatch();
   
-  const { setup } = useSelector(state => getUserDetails(state));
-  const [selectedCard, setSelectedCard] = useState(setup);
+  const { usage } = useSelector(state => getUserDetails(state));
+  const [selectedCard, setSelectedCard] = useState(usage);
 
   const onSubmit = () => {
     onSuccess();
-    dispatch(saveUserSetup(selectedCard));
+    dispatch(saveUserUsage(selectedCard));
   };
   return (
     <Grid className="flex column items-center">
@@ -23,7 +23,7 @@ const SetUp = ({ onSuccess }) => {
         How are you planning to use Eden?
       </Typography>
       <Typography className="sub-heading">
-        We'll streamline your setup experience accordingly.
+        We'll streamline your Usage experience accordingly.
       </Typography>
       <Grid container className="card-container flex justify-between">
         <Card
@@ -61,4 +61,4 @@ const SetUp = ({ onSuccess }) => {
   );
 };
 
-export default SetUp;
+export default Usage;

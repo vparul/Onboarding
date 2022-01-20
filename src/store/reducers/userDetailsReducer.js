@@ -1,7 +1,7 @@
-import { FOR_MYSELF } from "../../enums/setupEnums";
+import { FOR_MYSELF } from "../../enums/usageEnums";
 import {
   SAVE_USER_DETAILS,
-  SAVE_USER_SETUP,
+  SAVE_USER_USAGE,
   SAVE_USER_WORKSPACE_DETAILS,
   SET_COMPLETED_STEPS,
 } from "../../enums/userDetailsEnum";
@@ -11,7 +11,7 @@ const initialState = {
   displayName: null,
   workSpaceName: null,
   workSpaceUrl: null,
-  setup: FOR_MYSELF,
+  usage: FOR_MYSELF,
   stepCompleted: [0],
 };
 
@@ -25,8 +25,8 @@ function userDetailsReducer(state = initialState, action) {
       const { url, workSpaceName } = action.payload;
       return { ...state, workSpaceName, workSpaceUrl: url };
     }
-    case SAVE_USER_SETUP:
-      return { ...state, setup: action.payload };
+    case SAVE_USER_USAGE:
+      return { ...state, usage: action.payload };
     case SET_COMPLETED_STEPS:
       return {
         ...state,
